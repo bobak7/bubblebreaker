@@ -1,0 +1,133 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+}
+
+header, #board, #highScores, #options, footer {
+/*     background: whitesmoke; */
+    padding: 0.5em;
+}
+
+header {
+    background: hsl(180, 100%, 80%);
+    border: 1px solid hsl(180, 100%, 45%);
+}
+
+#board {
+    background: hsl(300, 100%, 90%);
+    border: 1px solid hsl(300, 100%, 50%);
+}
+
+#highScores {
+    background: hsl(60, 100%, 70%);
+    border: 1px solid hsl(60, 100%, 45%);
+}
+
+#options {
+    background: hsl(120, 100%, 70%);
+    border: 1px solid hsl(120, 100%, 40%);
+}
+
+footer {
+    background: hsl(0, 100%, 70%);
+    border: 1px solid hsl(0, 100%, 50%);
+}
+
+footer > small {
+    background: white;
+    padding: 0.2em;
+}
+
+#mainSection {
+    display: inline-grid;
+    grid-template-areas:
+        'head  head'
+        'board score'
+        'board opt'
+        'board bott'
+        'foot  foot';
+}
+
+header {
+    grid-area: head;
+    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#score {
+    font-weight: bold;
+    display: inline;
+}
+
+#score::before {
+    content: 'score: ';
+    font-weight: normal;
+}
+
+#board {
+    grid-area: board;
+    margin-right: 0.5em;
+}
+
+h3 {
+    background: white;
+    font-weight: normal;
+    margin-top: 0;
+    padding: 0.5em;
+}
+
+#highScores {
+    grid-area: score;
+    margin-bottom: 0.5em;
+}
+
+th {
+    font-weight: normal;
+}
+
+td {
+    background: white;
+    color: gray;
+    font-size: 0.9em;
+    padding: 0.2em;
+}
+
+.scoreColumn {
+    width: 5em;
+}
+
+.nameColumn {
+    width: 15em;
+}
+
+#options {
+    grid-area: opt;
+    display: flex;
+    flex-direction: column;
+}
+
+#newGame {
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+}
+
+#playerName {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#difficulty {
+    text-align: center;
+}
+
+footer {
+    grid-area: foot;
+    margin-top: 0.5em;
+}

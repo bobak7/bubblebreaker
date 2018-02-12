@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel=icon href=ornament.svg sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>BubbleBreaker</title>
+    
+</head>
+
+<body>
+
+<section id='mainSection'>
+
+    <header>
+        <h1 id='headingTitle'>
+            Sorry, BubbleBreaker cannot work without Javascript.
+        </h1>
+        <h3 id='score'>0</h3>
+    </header>
+    
+    <canvas id='board' width='432' height='432'>
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    
+    <section id='highScores'>
+        <h3>High scores</h3>
+        <table>
+            <tr>
+                <th class='scoreColumn'>Score</th>
+                <th class='nameColumn'>Player name</th>
+            </tr>
+            <tr id='score0'><td></td><td></td></tr>
+            <tr id='score1'><td></td><td></td></tr>
+            <tr id='score2'><td></td><td></td></tr>
+            <tr id='score3'><td></td><td></td></tr>
+            <tr id='score4'><td></td><td></td></tr>
+        </table>
+    </section>
+
+    <section id='options'>
+        <h3>Options</h3>
+        <button id='newGame' type='button' value='newGame'>
+            Start new game
+        </button>
+        <input id='playerName' type='text' name='playerName' maxlength='15'
+            placeholder='Player name'>
+        <label for='difficulty'>Difficulty:</label>        
+        <select id='difficulty'>
+            <option value='4'>easy</option>
+            <option value='5'>normal</option>
+            <option value='6'>hard</option>
+        </select>
+    </section>
+    
+    <footer>
+        <small>M. B.</small>
+    </footer>
+    
+</section>
+
+<script src='bubblestorage.js'></script>
+<script src='bubblebreaker.js'></script>
+<script src='highscores.js'></script>
+<script src='main.js'></script>
+
+</body>
+
+</html> 
